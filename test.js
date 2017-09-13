@@ -12,11 +12,15 @@ function setup() {
 }
 
 function draw() {
-    stroke(255, 255, 255);
-    point(random(641), random(481));
+
     if (mouseIsPressed) {
     	fill(r, g, b);
         noStroke();
         triangle(mouseX, mouseY, mouseX + 10, mouseY + 20, mouseX + 20, mouseY);
     }
+
+    stroke(255, 255, 255);
+    fill(255, 255, 255);
+    point(random(641), random(481));
+    ellipse(random(641), random(481),random(5));
 }
